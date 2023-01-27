@@ -24,7 +24,7 @@
 	let toAddress: string;
 
 	const send = async () => {
-		if (!/^/gi.test(wei)) {
+		if (!/^[0-9]+$/gi.test(wei)) {
 			alert(`${wei} must be numeric`);
 			return;
 		}
@@ -45,7 +45,7 @@
 	let toAddressErc20: string;
 
 	const sendErc20 = async () => {
-		if (!/^/gi.test(weiErc20)) {
+		if (!/^[0-9]+$/gi.test(weiErc20)) {
 			alert(`${weiErc20} must be numeric`);
 			return;
 		}
